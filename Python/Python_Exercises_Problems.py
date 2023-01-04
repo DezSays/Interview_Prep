@@ -678,3 +678,26 @@
 # sum20(3, 4) → 7
 # sum20(9, 4) → 20
 # sum20(10, 11) → 21
+
+
+
+
+
+
+# Given two arrays of integers, return True if they have the same first element or they have the same last element. Both arrays will be length 1 or more.
+
+# For example
+# common(3, 4) → 7
+# common(9, 4) → 20
+# common(10, 11) → 21
+
+# Hint
+# Check the first index [0] and the last index [-1] and compare
+
+# Solution
+# def common(a: list, b: list) -> bool:
+#     if a[0] == b[0] or a[-1] == b[-1]:
+#         return True
+#     else:
+#         return False
+# print(common([1,2,3,4], [5,6,7,8]))
