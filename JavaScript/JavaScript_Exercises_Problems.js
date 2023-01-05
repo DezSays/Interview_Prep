@@ -199,11 +199,33 @@
 
 // Given a string of characters as input, write a function that returns it with the characters reversed.
 
-const backwards = (str) =>{
-    for(let i = str.length - 1; i >= 0; i--){
-       let val = str[i]
-       console.log(val)
-    }
-}
+// const backwards = (str) =>{
+//     for(let i = str.length - 1; i >= 0; i--){
+//        let val = str[i]
+//        console.log(val)
+//     }
+// }
 
-backwards('Dez')
+// backwards('Dez')
+
+
+
+
+// A palindrome is a word or phrase that reads the same backward as forward. Write a function that checks for this.
+
+// const palindrome = (word) =>{
+//     const wordArray = word.split('');
+//     const reversedArray = wordArray.reverse();
+//     const reversedWord = reversedArray.join('')
+//     if(reversedWord == word){
+//         return true 
+//     }
+//     else{
+//         return false
+//     }
+// }
+
+// let result = palindrome('racecar')
+// console.log(result)
+
+
