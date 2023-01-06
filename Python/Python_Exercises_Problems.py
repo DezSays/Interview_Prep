@@ -681,7 +681,7 @@
 
 
 
-
+# *******************************************************************************************************
 
 
 # Given two arrays of integers, return True if they have the same first element or they have the same last element. Both arrays will be length 1 or more.
@@ -695,9 +695,33 @@
 # Check the first index [0] and the last index [-1] and compare
 
 # Solution
-# def common(a: list, b: list) -> bool:
-#     if a[0] == b[0] or a[-1] == b[-1]:
-#         return True
-#     else:
-#         return False
-# print(common([1,2,3,4], [5,6,7,8]))
+# def common(a: list, b: list) -> bool:     # set up the function to take in two lists as parameters, with the expectation that a boolean will be
+#     if a[0] == b[0] or a[-1] == b[-1]:    # if the first or last number in either list is the same
+#         return True                       # then return true
+#     else:                                 # otherwise
+#         return False                      # return false
+# print(common([1,2,3,4], [5,6,7,8]))       # print out the results of your function
+
+
+
+
+
+# *******************************************************************************************************
+
+# Given an array of integers, return true if 6 appears as either the first or last element in the array. The array will always have at least one number in it. 
+
+# For example:
+# find6([1,2,6]) → True
+# find6([1,2,5,6,9,10]) → False
+# find6([6,5,4,3,1,2]) → True
+
+# Hint:
+# The first element is nums[0] and the last element is nums[-1]. Check if either of those are a 6.
+
+# def find6(nums: list) -> bool:            # set up function to take in one list as a parameter, with a boolean returned
+#     if nums[0] == 6 or nums[-1] == 6:     # if the first or last number is a 6
+#         return True                       # return True
+#     else:                                 # otherwise
+#         return False                      # return False
+    
+# print(find6([1,2]))                       # print out the results of our function
