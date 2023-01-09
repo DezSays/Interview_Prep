@@ -229,3 +229,33 @@
 // console.log(result)
 
 
+
+
+
+
+
+// **********************************************************************************
+
+// Given an integer, reverse the order of the digits. (This solution has the steps broken down, but can do this much shorter. See next solution.)
+
+// const reverseInt = (num) => {
+//     const numStr = num.toString()
+//     const numArray = numStr.split('');
+//     const reversedArray = numArray.reverse();
+//     const reversedNum = reversedArray.join('')
+//     num = parseInt(reversedNum)  
+//     return reversedNum    
+// }
+
+// let result = reverseInt(54)
+// console.log(result)
+
+
+// const reverseInt = (num) => {
+//     const numVal = num.toString().split('').reverse().join('')
+//     num = parseInt(numVal)  
+//     return numVal    
+// }
+
+// let result = reverseInt(54)
+// console.log(result)
