@@ -1,1 +1,29 @@
 https://www.udemy.com/course/multitier-architecture-with-aws/
+
+What is a multitier architecture?
+    A multitier architecture is the model of client server architecture, which physically separates your environment info into layers.  
+
+4-tier architecture
+
+The first (outmost) tier has information that can be accessible from the internet. The main responsibility of this level is to check all incoming requests, ptovide a UI to the users, and redirect traffic to other layers if it is required.
+
+The second tier is the service/application level, and the main functionality of this layer is to provide secured communication between the first and third tier. This level proccesses incoming requests, validates requests, and returns a response. An example of this is an applicaction programming interface, better known as API. 
+
+The third tier is used for application auditing tools which can communicate with the fourth tier, which contains our data. This layer is where we can put our application, which can read and quantify the data. 
+
+The fourth (innermost) tier is where our data is stored, in a server. 
+
+
+Benefits of multitier architecture
+
+Isolation: The user is isolated to their respective content, and cannot access and make changes to our database.
+Flexibility: All of the layers are separated from each other.
+Fault Tolerance: If one layer crashes, it will not affect the other layers.
+Scalability: Is accomplished because all layers are independent, so you can focus on one layer without affecting the others. 
+
+
+Disadvantages of multitier architecture
+
+Complexity: You will need to maintain every layer and their connection to each other manually. 
+Latency: The latency of the traffic on such a schema will have more points to proxy requests. 
+Expenses: The response can be slower than a direct connection, which means we will need to pay for resources. 
