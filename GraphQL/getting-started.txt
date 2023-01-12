@@ -1,0 +1,28 @@
+https://hb.trythen.com/
+
+REST stands for:
+REpresentational 
+State 
+Transfer
+
+REST is a resource focused way of fetching (GET), creating (POST), updating (PUT), and deleting (DELETE) data.
+
+One of the primary benefits of graphQL is that we can consolidate multiple requests into one request, making data fetching much more effecient.
+
+Benefits of GraphQL:
+
+GraphQL: One request, one response || no overfetching or underfetching issues || less serverside code as frontend can make queries and changes as needed without accessing the servers code || avoids n + 1 problem
+REST: Multiple requests, multiple resonses || n + 1 problem - this occurs when you need to load in children where only one parent entity was requested. 
+
+GraphQL 'queries' are actually called mutations. Mutations are used to describe GraphQL requests that change data. These would be things like database inserts, updates, and deletes.
+
+GraphQL comes from Graph Theory. Think of graph theory as consisting of two shapes, a circle and a line. The circle represents people/objects/things, while the line represents the relationship between those objects. The technical term is not circles and lines, but rather (circle = vertex/node) while (line = relationship/edge).
+
+What is GraphQL?
+1. GraphQL is a query language for your application 
+    SQL is typically used to perform arbitrary database operations and most apps don't have a significant amount of security or limitations in what SQL statements can be executed on the server. This is why SQL queries are never passed from the client to the server; whereas in GraphQL you have a much more limited scope. With GraphQL, you have to explicitly expose the allowed queries. 
+2. GraphQL is a server side runtime which fulfills GraphQL queries   
+    GraphQL is like a thin layer that sits between the client and the servers code. It checks all requests coming from the client, so that if a client makes a bad request, it never even reaches the server. 
+
+(^client^) --- request ----> |GraphQL| /Server/
+

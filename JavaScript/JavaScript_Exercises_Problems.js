@@ -247,7 +247,7 @@
 //     return reversedNum    
 // }
 
-// let result = reverseInt(54)
+// let result = reverseInt(12345)
 // console.log(result)
 
 
@@ -257,5 +257,5 @@
 //     return numVal    
 // }
 
-// let result = reverseInt(54)
-// console.log(result)
+// let result = reverseInt1(54321)
+// console.log(result) 
