@@ -259,3 +259,24 @@
 
 // let result = reverseInt1(54321)
 // console.log(result) 
+
+
+
+
+
+
+// **********************************************************************************
+
+// Given a string of words or phrases, count the number of vowels.
+
+const getVowelCount = (string) => {
+    let count = 0
+    for(let i = 0; i <= string.length; i++){
+        if(string[i] == 'a' || string[i] == 'e' || string[i] == 'i' || string[i] == 'o' || string[i] == 'u' ){
+            count++
+        }
+    }
+    return count
+};
+
+console.log(getVowelCount("hello world"));
