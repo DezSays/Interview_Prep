@@ -725,3 +725,22 @@
 #         return False                      # return False
     
 # print(find6([1,2]))                       # print out the results of our function
+
+
+
+
+
+# *******************************************************************************************************
+
+# You are given a dictionary with two keys a and b that hold integers as their values. Without declaring any other variable, swap the value of a with the value of b and vice versa. Note: Return the dictionary after editing it.
+# Example:
+# Input:
+# numbers = {
+#   'a':3,
+#   'b':4
+# }
+# def swap_values(numbers):
+#   numbers['a'], numbers['b'] = numbers['b'], numbers['a']
+#   return numbers
+
+# print(swap_values(numbers))
