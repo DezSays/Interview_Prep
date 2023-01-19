@@ -269,14 +269,86 @@
 
 // Given a string of words or phrases, count the number of vowels.
 
-const getVowelCount = (string) => {
-    let count = 0
-    for(let i = 0; i <= string.length; i++){
-        if(string[i] == 'a' || string[i] == 'e' || string[i] == 'i' || string[i] == 'o' || string[i] == 'u' ){
-            count++
-        }
-    }
-    return count
-};
+// const getVowelCount = (string) => {
+//     let count = 0
+//     for(let i = 0; i <= string.length; i++){
+//         if(string[i] == 'a' || string[i] == 'e' || string[i] == 'i' || string[i] == 'o' || string[i] == 'u' ){
+//             count++
+//         }
+//     }
+//     return count
+// };
 
-console.log(getVowelCount("hello world"));
+// console.log(getVowelCount("hello world"));
+
+
+
+
+
+
+// **********************************************************************************
+
+// Given an array of items, reverse the order.
+
+// function reverseArray(array) {
+//   let newArr = []
+//   for(let num = array.length - 1; num >= 0; num--){
+//     newArr.push(array[num])
+//   } 
+//   return newArr
+// }
+
+// const arrayToReverse = [ 1, 2, 3, 4 ];
+// const result = reverseArray(arrayToReverse);
+
+// console.log(result);
+
+
+
+
+
+
+// **********************************************************************************
+
+// Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+
+// You may assume that each input would have exactly one solution, and you may not use the same element twice.
+
+// You can return the answer in any order.
+
+//  Example:
+// Input: nums = [2,7,11,15], target = 9
+// Output: [0,1]
+// Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].
+
+// let nums = [2,7,11,15]
+// let target = 9
+
+// const twoSum = (nums, target) => {
+//     for(let i = 0; i<=nums.length; i++){
+//         if(nums[i] + nums[i+1] == target){
+//             return [i, i+1]
+//         }
+//     }
+// };
+// let result = twoSum(nums,target)
+// console.log(result)
+
+
+
+
+
+
+// **********************************************************************************
+// Given a phrase, reverse the order of the characters of each word.
+
+const reverseWords = (words) => {
+    let newWord = ''
+    for(i=words.length - 1; i>=0;i--){
+        let val = words[i]
+        newWord+=val
+    }
+    return newWord
+}
+let result = reverseWords('howdy')
+console.log(result)
