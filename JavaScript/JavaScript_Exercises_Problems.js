@@ -342,13 +342,73 @@
 // **********************************************************************************
 // Given a phrase, reverse the order of the characters of each word.
 
-const reverseWords = (words) => {
-    let newWord = ''
-    for(i=words.length - 1; i>=0;i--){
-        let val = words[i]
-        newWord+=val
-    }
-    return newWord
-}
-let result = reverseWords('howdy')
-console.log(result)
+
+// const reverseWords = (words) => {
+//     let newWord = ''
+//     for(i=words.length - 1; i>=0;i--){
+//         let val = words[i]
+//         newWord+=val
+//     }
+//     return newWord
+// }
+// let result = reverseWords('howdy')
+// console.log(result)
+
+
+
+
+
+
+// **********************************************************************************
+
+// TODO Need to create a question for this solution
+
+
+// Option 1, the older way
+// function Office(city,state) {
+//     this.city = city;
+//     this.state = state;
+// }
+
+// Office.prototype.printIntro = function () {
+//     const message = `Welcome to the ${this.city} Office in ${this.state}!`
+//     console.log(message)
+// }
+
+// const scrantonOffice = new Office("Scranton", "PA")
+// const albanyOffice = new Office("Albany", "NY")
+
+// albanyOffice.printIntro()
+// scrantonOffice.printIntro()
+
+// Option 2, the newer way
+// class Office {
+//     constructor (city,state) {
+//         this.isOpen = true;
+//         this.city = city;
+//         this.state = state;
+//     }
+//     printIntro(){
+//         const message = `Welcome to the ${this.city} Office in ${this.state}!`
+//         console.log(message)
+//     }
+//     isOpenBranch(){
+//         if(this.isOpen){
+//             console.log(`The ${this.city} branch looks good!`)
+//         }
+//         else{
+//             console.log(`${this.city} branch has been shut down.`)
+//         }
+//     }
+// }
+
+
+
+// const scrantonOffice = new Office("Scranton", "PA")
+// const albanyOffice = new Office("Albany", "NY")
+// const stamfordOffice = new Office("Stamford", "CT")
+// stamfordOffice.isOpen = false;
+
+// albanyOffice.isOpenBranch()
+// scrantonOffice.isOpenBranch()
+// stamfordOffice.isOpenBranch()
