@@ -412,3 +412,56 @@
 // albanyOffice.isOpenBranch()
 // scrantonOffice.isOpenBranch()
 // stamfordOffice.isOpenBranch()
+
+
+
+
+
+
+// **********************************************************************************
+
+// Given a phrase, capitalize the first letter of each word.
+
+// Input: 'I want to ride my bicycle.'
+// Output: 'I Want To Ride My Bicycle.;
+
+// Method 1
+// const capitalize = (phrase) => {
+//     let newPhrase = ''
+//     let firstLetter = phrase[0].toUpperCase();
+//     newPhrase+=firstLetter
+//     for(i=1; i<phrase.length; i++){
+//         if(phrase[i-1] == ' '){
+//             let upperVal = phrase[i].toUpperCase()
+//             newPhrase+=upperVal
+//         }
+//         else{
+//             newPhrase+=phrase[i]
+//         }
+//     }
+//     return newPhrase
+// }
+
+// console.log(capitalize('I want to ride my bicycle.'));
+// capitalize('I want to ride my bicycle.')
+
+// Method 2
+
+// const capitalize = (phrase) => {
+//     const capitalizeArr = []
+//     const phraseArr = phrase.split(' ')
+
+//     console.log(phraseArr)
+
+//     // loop here
+//     for(let word of phraseArr){
+//         const capitalizeFirstLetter = word[0].toUpperCase();
+//         const restOfWord = word.slice(1);
+//         const newWord = capitalizeFirstLetter+restOfWord
+//         capitalizeArr.push(newWord)
+//     }
+//     const capitalizePhrase = capitalizeArr.join(' ');
+
+//     return capitalizePhrase
+// }
+// console.log(capitalize('i want to ride my bicycle.'));
