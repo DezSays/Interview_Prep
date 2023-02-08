@@ -466,3 +466,166 @@
 // }
 // console.log(capitalize('i want to ride my bicycle.'));
 
+
+
+ 
+// ***********************************************************************
+
+//Given two strings a and b check if the strings are both the same length, and if they have repeating characters that they are in the same position
+
+
+// function validateStrings(str1,str2){
+
+// /* Calling the function getIndexString and passing in the string str1. */
+//     const str1String = getIndexString(str1);
+
+// /* Creating a function called str2String that is calling the getIndexString function and passing in the
+// str2 variable. */
+//     const str2String = getIndexString(str2);
+
+//     console.log(str1String)
+//     console.log(str2String)
+
+// /* Comparing the two strings to see if they are equal. */
+//     return str1String == str2String;
+// }
+
+
+
+// function getIndexString(string){
+
+//     const mapThroughString = new Map();
+//     /* The above code is creating a new Map object. */
+
+// /* Looping through the string and printing out the index value of each character in the string. */
+//     for(indexValue in string){
+
+//         if(mapThroughString.has(string[indexValue])){
+//             mapThroughString.get(string[indexValue]).push(indexValue);
+//         }
+//         /* The above code is checking if the mapThroughString has the value of the string at the indexValue. If
+//         it does, it will push the indexValue into the array. */
+        
+//         else{
+//             let newArr = [];
+//             newArr.push(indexValue);
+//             mapThroughString.set(string[indexValue],newArr);
+//         }
+//         /* The above code is checking if the character is already in the map. If it is, it will push the index
+//         value into the array. If it is not, it will create a new array and push the index value into the
+//         array. */
+//     }
+//     let newArr = [];
+
+// /* Taking the array of arrays and joining them into a single array. */
+//     mapThroughString.forEach((value)=>{
+//         newArr.push(value.join(''))
+//     })cinema: Class Zoom: https:\\bit.ly\3p41Imk pw: builderCanvas: shorturl.at\jmM29Class Repo: https:\\github.com\DigitalCraftsStudents\web-ft-11-22:books: TA Office: https:\\bit.ly\DC-OH-Zoom pw: builder22Loading history...Jessika (she\her)  4:11 PMoh snap!Adam Wright  4:12 PMWhat's the full problem
+//     return newArr.join(' ');
+
+// }
+
+// const flag = validateStrings('egg','add');
+// console.log(flag);
+
+// Remove duplicates from an array?
+
+
+// Method 1, using set 
+
+// const array = [1, 2, 3, 4, 5, 3, 4];
+
+// let removeDuplicates = [...new Set(array)]
+
+// console.log(removeDuplicates); // [ 1, 2, 3, 4, 5 ];
+
+
+
+// Method 2, using filter
+
+// const array = [1, 2, 3, 4, 5, 3, 4];
+// let uniqueArr = array.filter((item, index) => {
+//     return array.indexOf(item) === index;
+// });
+// console.log(uniqueArr); // [ 1, 2, 3, 4, 5 ];
+
+
+
+// Method 3, forEach and Includes 
+
+// const array = [1, 2, 3, 4, 5, 3, 4];
+// let noDuplicateArray = [];
+// array.forEach((item) => {
+//     if (!noDuplicateArray.includes(item)) {
+//         noDuplicateArray.push(item);
+//     }
+// });
+// console.log(noDuplicateArray);
+
+
+
+ 
+// ***********************************************************************
+
+
+// Translate a phrase into Pig Latin.
+
+// input: Learning JavaScript is so much fun
+// output: earningLay avaScriptJay siay osay uchmay unfay
+
+// const translateIntoPigLatin = (phrase) => {
+//     let splitPhrase = phrase.split(' ');
+//     let result = [];
+//     for(let word of splitPhrase){
+//         let firstLetter = word.substring(0,1);
+//         let restOfWord = word.substring(1);
+//         let newWord = restOfWord + firstLetter + 'ay';
+//         result.push(newWord);
+//     }
+//     return result.join(' ');
+
+// };
+
+// console.log(translateIntoPigLatin('Learning JavaScript is so much fun'));
+
+
+
+
+
+// ***********************************************************************
+
+
+
+
+
+// For a given number of steps, print out a staircase using hashes.
+
+// input: 4
+
+// output:
+// #
+// ##
+// ###
+// ####
+
+// Option 1 
+// const printStaircase = (steps) => {
+//     for(let i=0; i < steps; i++){
+//         let val = '#'.repeat(i)
+//         console.log(val)
+//     }
+// };
+
+// printStaircase(4);
+
+// Option 2
+
+// const printStaircase = (steps) => {
+//     let stairs = ''
+//     for(let i=0; i < steps; i++){
+//         stairs += '#'
+//         console.log(stairs)
+//     }
+// };
+
+// printStaircase(4);
