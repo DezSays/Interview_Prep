@@ -1,1 +1,9 @@
 Section 2.6
+
+GraphQL does not specify the server response, meaning you could get the type of JSON, YAML, XML, etc. 
+
+These queries are like fill in the blank questions. 
+
+https://gql.trythen.com/graphiql <= Playground for testing queries
+
+ctrl + space will tell you available columns

@@ -1,0 +1,13 @@
+Strings and Integer are Scalar Types, primitive data (data that cannot be broken down into something simpler) 
+
+Arrays and Objects are examples of Complex types, which require sub selections 
+
+(Scaler Types in GraphQL:
+String
+Integer
+Float 
+Boolean 
+ID
+)
+
+

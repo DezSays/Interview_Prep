@@ -1,0 +1,14 @@
+Order of events:
+
+Generate Query (Client) | Query Sent To Server | Query Validated By Server | Server Callse Functions | Response From Server
+
+Functions that GraphQL call to the server in response to queries are called resolver functions 
+
+Make sure you have the following installed:
+    node.js
+        Mac or Linux: https://github.com/nvm-sh/nvm#installation
+        Windows: https://nodejs.org/en/download/
+
+    git
+        https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
+

@@ -1,0 +1,47 @@
+NOTE - This method is DEPRECATED
+
+npm init -y 
+npm i graphql graphql-tools 
+
+create index.js 
+
+define fields (types dfeined):
+
+    const typeDefs = `
+    schema {
+        query: FirstQuery
+    }
+    type FirstQuery {
+        hello: String
+    }
+    `;
+
+
+There are a few ways to define types for the graphql server. 
+    1. Imperative Option 
+        This is done using normal javascript and a library like graphql 
+    2. Declarative Option *simpler option 
+        This way is done by using GraphQL Schema Definition Language (GraphQL SDL) and a library like graphql-tools
+
+create resolver functions for each requests:
+
+    const resolvers = {
+        FirstQuery: {
+            hello: () => 'World'
+        }
+    }
+
+create schema 
+
+    const { makeExecutableSchema } = require('graphql-tools');
+    const schema = makeExecutableSchema({ typeDefs, resolvers })
+
+execute queries
+    const query = process.argv[2]
+    const { graphql } = require('graphql')
+    graphql(schema,query).then(result => {
+    console.log(JSON.stringify(result))
+})
+
+node index.js "query { hello }"
+    
