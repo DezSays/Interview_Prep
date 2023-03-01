@@ -5,7 +5,7 @@ npm i graphql graphql-tools
 
 create index.js 
 
-define fields (types dfeined):
+define fields (types defined):
 
     const typeDefs = `
     schema {

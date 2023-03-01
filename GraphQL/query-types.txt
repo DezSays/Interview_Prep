@@ -11,3 +11,76 @@ ID
 )
 
 
+A query can be given an Operation Name, which is a unique name used to refer to that query later in the code. These are graphQL variables. 
+
+
+
+Challenge: Create a query with the operation name: BooksQuery
+Have the query fetch the: id, title, page count and rating 
+for the books. IMPORTANT: using variables, fetch the 3rd page of books, 
+where each page contains 4 books: 
+
+    query BooksQuery ($page: Int, $first: Int){
+    books(page: $page, first: $first){
+        id
+        title
+        pageCount
+        rating
+    }
+    }
+
+    {
+    "page": 3,
+    "first": 4
+    }
+
+
+An object type is a collection of related fields. 
+
+An interface is a list of fields and their corresponding types, and can be implemented by any type. 
+
+! after a key means that it is required, and cannot be left blank/null/undefined.
+
+You can create an interface that you would like to see applied to multiple object types. For example:
+
+interface Inventory {
+    id: ID!
+    name: String
+    description: String 
+    price:: Int
+}
+
+Now let's say we want to implement the above code in another object we have called Food 
+
+type Food implements Inventory <= that will add the categories from Inventory to the Food object 
+
+Here is an example of using an alias in graphQL:
+
+    query TwoBooks {
+        book1: book(id:"1"){
+            title
+            subtitle
+            description
+            pageCount
+            rating
+        }
+}
+
+Fragments are a list of fields for a specific type. 
+
+Interfaces are about modeling your api on the server whereas Fragments are about consuming api from the client 
+
+    Here is an example of a Fragment: 
+        fragment SomeFragmentName on Book {
+            id 
+            title 
+        }
+
+        query BooksQuery {
+            books {
+                ...SomeFragmentName
+            }
+        }
+    
+    By using the spread operator and the fragments name, it is the same as if we were to have manually written id and title intead of ...SomeFragmentName
+
