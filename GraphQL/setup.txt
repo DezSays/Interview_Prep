@@ -16,7 +16,6 @@ define fields (types defined):
     }
     `;
 
-
 There are a few ways to define types for the graphql server. 
     1. Imperative Option 
         This is done using normal javascript and a library like graphql 

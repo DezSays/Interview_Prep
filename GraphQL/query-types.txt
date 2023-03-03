@@ -10,10 +10,7 @@ Boolean
 ID
 )
 
-
 A query can be given an Operation Name, which is a unique name used to refer to that query later in the code. These are graphQL variables. 
-
-
 
 Challenge: Create a query with the operation name: BooksQuery
 Have the query fetch the: id, title, page count and rating 
@@ -33,7 +30,6 @@ where each page contains 4 books:
     "page": 3,
     "first": 4
     }
-
 
 An object type is a collection of related fields. 
 
