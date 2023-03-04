@@ -1,0 +1,96 @@
+Q1. If you upload your code to the product line, and you found that the client side of the application broke down. How do you deal with it and what's your step and why?
+
+
+Q4. You are given two rectangles a and b each defined by four ordered pairs denoting their corners on the x, y plane. Write a function rectangle_overlap to determine whether or not they overlap. Return True if so, and False otherwise. Note 1: If the two rectangles border one another, or share a corner like two diagonally adjacent positions on a chessboard, they are said to overlap. Note 2: The lists of ordered pairs are in no particular order. The first entry in list a could be the top left corner while the first in list b is the bottom right.
+Example:
+Input:
+a = [(-3,5), (-3,2),(0,5),(0,2)]
+b = [(-1,4), (3,4), (3,1), (-1,1)]
+Output:
+def rectangle_overlap(a, b) -> True
+As point (0,2) is fully contained in rectangle b and point (-1,4) is fully contained in a rectangle a.
+
+
+Q5. Explain the incremental build process and advantages. What changes are required to improve on the automated build process. Explain the overall build process. Need to automate the system for periodic releases.
+
+Q6. List SQL query error and exception handling.
+
+Q7. List python datatypes.
+
+Q8. List js datatypes.
+
+Q9. How would you describe a technical concept to a nontechnical person?
+
+Q10. What is OOP?
+
+Q11. Imagine a business leader wants you to change an existing process, but you don't see any issues with the current process. How would you respond to this situation?
+
+Q12.Tell me about a time when you learned something new in an area you already excelled in.
+
+Q13. Describe a time when you tried something new at work even though it was not required.
+
+Q14. What steps have you taken tor emain current in your field? Have these been successful?
+
+Q15. What training or learning activity has had the greatest impact on your performance? Why was this experience so impactful?
+
+Q16. Tell me about a time you found an innovative solution to a work problem.
+
+Q17. Describe a time when you disappoined your coworkers or supervisor. How did you respond?
+
+Q18. Describe a time when you sought out new alternatives to solve a problem reather than rely on an established method?
+
+Q19. Tell me about a time you asked for feedback at work and what you did after recieving it.
+
+Q20. Suppose a project leader challenges a decision or work product you felt confident in. How would you respond?
+
+Q21. Tell me about a time when you were challenged to think differently about a skill process you have mastered.
+
+Q22. Suppose you identify a possible improvement to a burdensome process. When you present your idea, your coworkers dismiss it and say "we've already tried that and it didn't work." How would you handle this situation?
+
+Q23. Describe how your training and experience have prepared you to be successful in this role.
+
+Q24. Tell us about a time you learned a complex concept and applied it at work.
+
+Q25. Highlight two of the more technical skills you possess and how you will use them here.
+
+Q26. Tell us which programs you are skilled in and how you have used them at work.
+
+Q27. Describe a very complex term in a way that non-technical persons would understand.
+
+Q28. Tell us about a time you participated in the release of a new product or service. What was your specific role?
+
+Q29. Highlight your most advanced skills in [add software program] and how you've used them at work.
+
+Q30. Describe the most complex statistical analysis you have used at work to solve a problem.
+
+Q31. Tell us abour a time when you applied your strongest technical skills on a complex project.
+
+Q32. Suppose an application you are working on has been experience performance bottlenecks. Walk us through how you would troubleshoot the performance bottleneck, and explain your decisions.
+
+Q33. Explain how technology is impacting your field and what you are doing to stay up-to-date.
+
+Q34. Describe how you have used data to solve a complex problem.
+
+Q35. Give me an example of a novel solution you have offered at work.
+
+Q36. Give an example of a creative contribution you have made at work. How did you come up with the idea and what impact did it have?
+
+Q37. Tell me about a time when you improved a process of technology to get work done more efficiently.
+
+Q38. Give an example of an innovative idea you used to solve a problem that had a positive impact on the business.
+
+Q39. Describe a time when you had to come up with a creative solution because there was no policy that fit the particular situation. What did you do? What was the outcome?
+
+Q40. Give an example of when you had to implement a channge. How did you ensure the change fit with the strategic direction of the department or your business function?
+
+Q41. Tell me about a time when you had to work in an unstructured environment. Were you successful or unsuccessful?
+
+Q42. Give an example of a project you completed where there were no clear guidelines and there were seceral options to choose from.
+
+Q43. Suppose you are working on a project that relies on an outdated process. Changing the process is possible, but will delay the project. How would you approach this situation, and what factors would you consider in your decisions?
+
+Q44. Tell me about a time when you identified and optimized an existing work process. How did you measure sucess?
+
+Q45. Tell me about a time when you monitored the performance of a project from start to finish. How did you monitor performance after the project finished?
+
+Q46. Imagine you are responsible for leading a project that is due in the next six months. What steps would you take to achieve objectives and ensure sustainability?
