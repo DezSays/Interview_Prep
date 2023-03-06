@@ -80,3 +80,139 @@ Interfaces are about modeling your api on the server whereas Fragments are about
     
     By using the spread operator and the fragments name, it is the same as if we were to have manually written id and title intead of ...SomeFragmentName
 
+Union Types:
+    A union type is a type that represents or be one of several types. Union types would allow you to search multiple tables for information. ex: union SearchResi;t = Author | Book | Review 
+
+    Getting data from each set requires something like an if statement. In GraphQL, it is called '... on'. See example below:
+        # Challenge: Add inline fragments for Author, User and Review types
+        # For author results, include the authors: first and last name, 
+        # and the title of the authors books
+        # For user results, include the user's first and last names, 
+        # and the title of any books the user has reviewed
+        # For Review results, include the rating, comment and the books title
+        # HINT: What your adding to this query, will look very similar to the
+        # inline (conditional) fragment for the Book type you see below... 
+        # Answer: you can find the completed query at: http://knowthen.com/gql10A
+
+        query SearchQuery {
+            search(term: "Dan") {
+                __typename
+                ... on Book {
+                title
+                subtitle
+                authors {
+                    firstName
+                    lastName
+                }
+                }
+                ... on Author {
+                firstName
+                lastName
+                books {
+                    title
+                }
+                }
+                ... on User {
+                firstName
+                lastName
+                reviews {
+                    book {
+                    title
+                    }
+                }
+                }
+                ... on Review {
+                rating
+                comment
+                book {
+                    title
+                }
+                }
+            }
+        }
+
+Directives:
+    Directives allow you to do many things, one of which is changing your query based on a variable. The two directives included in all GraphQL servers are include and skip. All directives start with an @ symbol, and the two mentioned previously should always include at least this parameter:
+        @include(if: Boolean)
+        @skip(if: Boolean)
+    You can also create your own directives, but the two above will be included. 
+
+    @include example:
+        query BookReviews($status: [ReviewStatus!], $includeUser: Boolean!){
+            reviews(status: $status){
+                id 
+                status 
+                comment 
+                rating 
+                user @include(if: $includeUser) {
+                    firstName
+                    lastName
+                }
+            }
+        }
+
+    Query Variables:
+        {
+            "status": ["FLAGGED"],
+            "includeUser": false 
+        }
+
+    @skip example:
+        query Books($skipReviews: Boolean!) {
+            books {
+                title
+                subtitle
+                id
+                reviews @skip(if: $skipReviews) {
+                comment
+                rating
+                }
+            }
+        }
+
+    Query Variables:
+        {
+            "skipReviews": true 
+        }
+
+
+The feature that allows you to make changes in GraphQL is called Mutations. 
+    Example of mutations:
+
+    # Challenge:
+    # Open the document explorer and go into the 
+    # mutation root type. Find the mutation to add a user
+    # Then add yourself as a user
+    # Make sure you return the ID that's assigned to you.
+    # Next, create a query for your new user, using the 
+    # user query field.
+    # 
+    # NOTE: You're new users will get wiped out after a short
+    # period of time, so if you added a user yesterday, it's
+    # not going to exist today... It might not even exist after a 
+    # few minutes :)
+
+    mutation AddUser($user: UserInput) {
+        addUser(user:$user){
+            id
+            firstName
+            lastName
+        }
+    }
+
+    query user{
+        user(id: 206){
+            id
+            firstName
+            lastName
+        }
+    }
+
+    Query Variables:{
+        "user": {
+                "firstName": "Dez",
+            "lastName": "Bryan"
+            }
+        }
+
+In GraphQL, you only want to have one endpoint for simplicity and discoverability.
