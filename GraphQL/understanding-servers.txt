@@ -12,3 +12,6 @@ Make sure you have the following installed:
     git
         https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
 
+To add a comment that will display in the 'documentation'; you would write the following to post "Doug is the cutest pug!" to the server docs. 
+    # root query for our **Doug is the cutest pug!**
+    These are called doc strings. 
